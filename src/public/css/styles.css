@@ -1,0 +1,86 @@
+body {
+  font-family: fantasy;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgb(0, 132, 255);
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(60, 80, 83);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: aqua;
+}
+
+
+.content {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto; 
+  margin-top: 200px;
+}
+
+h2 {
+  color: black;
+  background-color: rgba(100, 148, 237, 0.596);
+}
+
+p {
+  color: #ffffff;
+}
+
+h4 {
+  color: #ffffff;
+}
+
+h4:hover {
+  color: rgb(59, 188, 247);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.museo {
+  display: block;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 90vh;
+  margin: auto;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
