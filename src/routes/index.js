@@ -22,8 +22,8 @@ router.get("/servidores", (req, res) => {
     res.render("servidores", { title: "Servidores Web" });
 });
 
-router.get("/nodejs", (req, res) => {
-    res.render("nodejs", { title: "Nodejs" });
+router.get("/backend", (req, res) => {
+    res.render("backend", { title: "Desarrollo Backend" });
 });
 
 router.get("/general", (req, res) => {

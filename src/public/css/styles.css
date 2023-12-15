@@ -1,5 +1,4 @@
 body {
-  font-family: fantasy;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -37,12 +36,28 @@ nav a:hover {
   padding: 20px;
   max-width: 600px;
   margin: auto; 
-  margin-top: 200px;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: fantasy;
 }
 
 h2 {
+  font-family: fantasy;
   color: black;
   background-color: rgba(100, 148, 237, 0.596);
+}
+
+h3 {
+  font-family: fantasy;
+  color: black;
+  background-color: rgba(176, 201, 247, 0.596);
+  max-width: 500px;
+}
+
+a {
+  font-family: fantasy;
 }
 
 p {
@@ -57,11 +72,23 @@ h4:hover {
   color: rgb(59, 188, 247);
 }
 
-img {
+.pecos {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+img {
+  max-width: 600px;
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.capturas {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
 }
 
 .museo {
@@ -84,3 +111,15 @@ img {
   margin-top: 40px;
 }
 
+pre {
+  background-color: #919191;
+  padding: 10px;
+  overflow: auto;
+  font-size: 14px;
+  border: 1px solid #000000;
+  line-height: 1.45;
+}
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+}

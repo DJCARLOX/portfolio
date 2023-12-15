@@ -18,49 +18,135 @@
         <!-- Descripción de la Práctica -->
         <section class="practice-description">
             <h2>Descripción de la Práctica</h2>
-            <p>¿Cuál fue el objetivo principal de esta práctica?</p>
-            <p>¿Qué métodos o procedimientos utilizaste?</p>
-            <p>¿Qué materiales o herramientas fueron necesarios?</p>
+            <h3>Práctica 1 --> MIGRACIÓN Y DESPLIEGUE DE APLICACIONES WEB EN PHP</h3>
+            <p>El objetivo principal de esta práctica era hacer una migración web con wordpress.</p>
+            <p>Procedimiento seguido:</p>
+            <pre>
+                <code>
+1. DESCARGAR FICHERO .ZIP DE WORDPRESS: wordpress.org
+2. DESCOMPRIMIR EN EL DIRECTORIO DEL SERVIDOR APACHE **HTDOCS** --> WORDPRESS_CARLOS_GONZALEZ
+3. EN EL NAVEGADOR PONES ESTA DIRECCIÓN http://localhost/WORDPRESS
+4. Seguir el formulario web de Wordpress
+5. Luego, tendríamos que exportar la base de datos con el comando "mysqldump -uroot -p   > export.sql"
+6. Por último enviarselo a un compañero y completar la migración.
+                </code>
+            </pre>
+
+            <video width="640" height="360" controls>
+                <source src="img/wordpress.mp4" type="video/mp4">
+            </video>
+
+            <h3>Práctica 2 --> CONFIGURACIÓN VIRTUAL HOST EN APACHE</h3>
+            <p>El objetivo principal de esta práctica era configurar un host virtual en apache.</p>
+            <p>Procedimiento seguido:</p>
+            <pre>
+                <code>
+Debíamos añadir lo siguiente en el fichero C:\xampp\apache\conf\extra\httpd-vhosts.conf:
+
+VirtualHost *
+DocumentRoot "C:\xampp\htdocs"
+ServerName localhost
+/VirtualHost
+VirtualHost *
+DocumentRoot "d:\miproyecto\httpdocs"
+ServerName miproyecto.local.com 
+Directory "d:\miproyecto\httpdocs"
+Require all granted
+/Directory
+/VirtualHost
+                </code>
+            </pre>
+
+            <img src="img/virtual_host.png" alt="Descripción de la imagen">
+
+            <h3>Práctica 3 --> INSTALAR APACHE EN UBUNTU CON PHP Y VER LA SEGURIDAD</h3>
+            <p>El objetivo principal de esta práctica era instalar apache en ubuntu junto con PHP y comprobar su seguridad.</p>
+            <p>Procedimiento seguido:</p>
+            <pre>
+                <code>
+- Para esta práctica debíamos instalar apache y php en ubuntu siguiendo los pasos de un manual.
+- Después, debíamos añadir los ficheros validate.php y login.html en /var/www/html.
+- Por último abrirlo en un navegador y capturar con wireshark y ver que no va cifrado al no tener https.
+                </code>
+            </pre>
+            <div class = "capturas">
+            <img src="img/captura2.png" alt="Descripción de la imagen">
+            <img src="img/captura3.png" alt="Descripción de la imagen">
+            <img src="img/captura4.png" alt="Descripción de la imagen">
+            <img src="img/captura5.png" alt="Descripción de la imagen">
+            <img src="img/captura6.png" alt="Descripción de la imagen">
+            </div>
+
+            <h4>Observación</h4>
+            <p> --> Como se puede ver en la útima imagen, esta práctica no me salió completa debido a que tuve problemas al filtrar en la captura de tráfico con el wireshark y no me salía el resultado con los datos sin cifrado.</p>
+
+            <h3>Práctica Final --> Examen</h3>
+            <p>El objetivo principal de esta práctica era crear un servidor web completo con su https, virtual host y un proxy inverso usando el servicio de Apache en Ubuntu. Como resultado debíamos hacer la página con un botón que al pulsarlo le diera la orden de encender una bombilla desde un Sonoff con determinada IP.</p>
+            <p>Procedimiento seguido:</p>
+            <pre>
+                <code>
+1. Instalación y Configuración de Apache Linux
+2. Configuración de Virtual Host en Apache Linux
+3. Añadir los certificados para el https
+4. Implemetar y configurar el Proxy Inverso
+                </code>
+            </pre>
+            <div class = "capturas">
+                <img src="img/captura7.png" alt="Descripción de la imagen">
+                <img src="img/captura8.png" alt="Descripción de la imagen">
+                <img src="img/captura9.png" alt="Descripción de la imagen">
+                <img src="img/captura10.png" alt="Descripción de la imagen">
+                <img src="img/captura11.png" alt="Descripción de la imagen">
+                </div>
+
+            <h4>Observación</h4>
+            <p> --> Esta práctica fue sin duda la que más dificultades me dió ya que disponíamos de muy poco tiempo para hacerlo todo y me dió problemas el Xampp con el Apache de Windows para el proxy inverso, así que esa parte no la pude hacer. El resto fue todo bien pero fue un reto hacerlo en ese tiempo.</p>
+
+            <h4>Elementos utilizados en las prácticas</h4>
+            <p>Para ello utilizamos Wordpress para una práctica, Apache en Xampp y máquinas virtuales con Apache en Linux (Ubuntu).</p>
         </section>
 
+        <img src="img/apache.png" alt="Descripción de la imagen">
         <!-- Resultados y Análisis -->
         <section class="results-analysis">
             <h2>Resultados y Análisis</h2>
-            <p>¿Cuáles fueron los resultados principales de la práctica?</p>
-            <p>¿Cómo interpretamos estos resultados?</p>
-            <p>¿Hubo algún resultado inesperado? ¿Cómo lo manejaste?</p>
+            <p>En general los resultados de las prácticas fueron todos buenos, excepto algunos que se dificultaron algunas cosas como las que ya mencioné anteriormente.</p>
+            <p>Quizás el resultado más inesperado que tuve fue en la práctica 3 cuando tuve que hacer la captura de tráfico con el wireshark ya que creía que iba a funcionar y al final no fui capáz de lograrlo.</p>
         </section>
 
         <!-- Reflexiones Personales y Aprendizaje -->
         <section class="personal-reflection">
             <h2>Reflexiones Personales y Aprendizaje</h2>
-            <p>¿Qué aprendiste durante esta práctica?</p>
-            <p>¿Cómo aplicaste conocimientos teóricos en esta experiencia práctica?</p>
-            <p>¿Qué habilidades desarrollaste o mejoraste?</p>
+            <p>Con estas prácticas he podido aprender mucho sobre crear servidores web y de las cosas más interesantes de aprender han sido el implementar el cifrado https como el proxy inverso.</p>
+            <p>Pude aplicar mis conocimientos teóricos en estas prácticas para saber como funciona un proxy inverso y el cifrado https.</p>
+            <p>En concreto con la práctica final pude mejorar mi habilidad para hacer este tipo de proyectos en tiempo record ya que en el futuro nos servirá para el trabajo.</p>
         </section>
 
         <!-- Desafíos y Soluciones -->
         <section class="challenges-solutions">
             <h2>Desafíos y Soluciones</h2>
-            <p>¿Enfrentaste algún desafío durante esta práctica? ¿Cómo lo superaste?</p>
-            <p>¿Hubo algún error o fallo? ¿Qué aprendiste de él?</p>
+            <p>En general lo más desafiante de estas práctias eran el tiempo y fallos en algunos comandos. El problema con el tiempo se soluciona con la práctica del día a día y los fallos en comandos se puede solucionar o bien investigando o apoyandote en ChatGPT</p>
+            <p>El mayor fallo que tuve quizás haya sido no saber optimizar el tiempo para hacer cada punto en la práctica final, puesto que me detuve mucho tiempo en la parte del proxy inverso debido a que me daba fallos. Lo que pude aprender de esto es a saber optimizar más el tiempo y hacer otras cosas que pueda hacer antes y pegarme con eso al final</p>
         </section>
 
         <!-- Conexión con Objetivos Educativos o Profesionales -->
         <section class="educational-professional-connection">
             <h2>Conexión con Objetivos Educativos o Profesionales</h2>
-            <p>¿Cómo contribuye esta práctica a tus objetivos académicos o profesionales?</p>
-            <p>¿De qué manera esta práctica influye en tu comprensión del campo de estudio o profesión?</p>
+            <p>Estas prácticas nos sirven al final para que sepamos desplegar este tipo de servidores web.</p>
+            <p>Además de que también nos prepara para hacerlo en un tiempo limitado porque al final es la realidad en la mayoría de los trabajos.</p>
         </section>
 
         <!-- Mejoras y Aplicaciones Futuras -->
         <section class="future-improvements">
             <h2>Mejoras y Aplicaciones Futuras</h2>
-            <p>Si tuvieras que repetir esta práctica, ¿qué mejorarías?</p>
-            <p>¿Cómo puedes aplicar lo aprendido en futuras prácticas o proyectos?</p>
+            <p>Todo esto que he aprendido lo puedo implementar en muchos de mis proyectos personales.</p>
         </section>
     </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <%- include("partials/footer") %>
 </body>
